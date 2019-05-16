@@ -5,4 +5,11 @@ new Vue({
     user: 'Hassan Djirdeh',
     city: 'Toronto',
   },
+  methods: {
+    changeGreeting() {
+      this.greeting = this.greeting === 'Hello World!' ?
+       'What is up!' :
+       'Hello World!';
+    }
+  }
 });
